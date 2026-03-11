@@ -1,61 +1,61 @@
-# Project Portfolio Dossier
+# Projektdossier
 
-## Title
+## Titel
 
-AI Readiness Blueprint for German Enterprises
+Blueprint zur KI-Implementierung in deutschen Unternehmen
 
-## Short Description
+## Kurzbeschreibung
 
-A portfolio project that demonstrates how I would structure enterprise digitalization and AI enablement for German mid-sized companies and large corporations. It combines IT landscape assessment, target operating model design, governance, tool selection, KPI logic, and transformation roadmaps in one coherent repository.
+Dieses Projekt beschreibt, wie deutsche Mittelständler und Konzerne strukturiert auf das KI-Zeitalter vorbereitet werden können. Es verbindet Analyse der IT-Landschaft, Zielbildentwicklung, Governance, Toolauswahl, KPI-Logik und Transformations-Roadmaps in einem zusammenhängenden Repository.
 
-## Positioning
+## Einordnung
 
-This project is meant to show strategic thinking with operational depth. The repository is not a generic AI trend summary. It is a structured framework for how an organization can become ready for the AI era in a controlled, measurable, and business-relevant way.
+Das Repository ist kein allgemeiner Trendüberblick zu KI, sondern ein strukturiertes Umsetzungsmodell. Es zeigt, wie Unternehmen KI kontrolliert, messbar und geschäftsrelevant einführen können.
 
-## What the Project Covers
+## Inhalt des Projekts
 
-- assessment of current IT, process, and data landscape
-- digital and AI maturity model
-- target operating model for AI-ready organizations
-- AI use case portfolio and prioritization logic
-- governance, risk, security, and compliance
-- KPI-driven decision framework
-- transformation roadmap for 12 to 24 months
-- templates for assessments, scorecards, and program steering
+- Analyse der aktuellen IT-, Prozess- und Datenlandschaft
+- Reifegradmodell für Digitalisierung und KI
+- Ziel-Operating-Model für KI-fähige Organisationen
+- KI-Use-Case-Portfolio und Priorisierungslogik
+- Governance, Risiko, Security und Compliance
+- KPI-basiertes Entscheidungsmodell
+- Transformations-Roadmap fuer 12 bis 24 Monate
+- Templates für Assessments, Scorecards und Programmsteuerung
 
-## Core Idea
+## Kerngedanke
 
-The core thesis is that AI readiness is not a standalone technology project. It is an enterprise capability program. Companies need process clarity, data ownership, integration standards, governance, and measurable delivery before AI can scale responsibly.
+Die zentrale These lautet: KI-Readiness ist kein isoliertes Technologieprojekt, sondern ein unternehmensweites Fähigkeitsprogramm. Unternehmen brauchen Prozessklarheit, Datenverantwortung, Integrationsstandards, Governance und messbare Umsetzung, bevor KI verantwortungsvoll skaliert werden kann.
 
-## Why This Matters
+## Warum das relevant ist
 
-Many organizations start AI pilots without a stable operating foundation. That leads to fragmented tools, poor adoption, governance concerns, and limited business impact. This project addresses that gap by combining management logic with implementation logic.
+Viele Organisationen starten KI-Piloten ohne stabiles Betriebsmodell. Das führt zu fragmentierten Tools, geringer Nutzung, Governance-Problemen und begrenztem Geschäftsnutzen. Dieses Projekt adressiert genau diese Lücke, indem Management-Logik und Umsetzungslogik zusammengebracht werden.
 
-## Example Application Areas
+## Beispielhafte Einsatzfelder
 
-- industrial mid-sized companies with Excel-heavy coordination and fragmented workflows
-- large enterprises with multiple business units and inconsistent governance
-- transformation offices that need a practical prioritization and steering model
-- leadership teams that want a decision framework instead of isolated ideas
+- industrielle Mittelständler mit Excel-getriebenen Abstimmungen und fragmentierten Workflows
+- Konzerne mit mehreren Business Units und uneinheitlicher Governance
+- Transformation Offices mit Bedarf an einem belastbaren Priorisierungs- und Steuerungsmodell
+- Unternehmensleitungen, die statt Einzelideen ein Entscheidungsmodell benötigen
 
-## What This Demonstrates About My Work
+## Was das Projekt konkret leistet
 
-- I can turn broad transformation themes into structured delivery artifacts.
-- I connect strategy, enterprise architecture, governance, and execution.
-- I work from decision criteria and measurable outcomes instead of buzzwords.
-- I think in systems, operating models, and scalable implementation patterns.
+- Übersetzung komplexer Transformationsthemen in konkrete Artefakte
+- Verbindung von Strategie, Enterprise Architecture, Governance und Umsetzung
+- Priorisierung über Entscheidungslogik und messbare Ergebnisse
+- systemisches Denken in Betriebsmodellen und skalierbaren Implementierungsmustern
 
-## Repository Highlights
+## Wichtige Bestandteile des Repositorys
 
-- Executive summary and management framing
-- Maturity model for digitalization and AI
-- Assessment framework for current-state analysis
-- Operating model and target architecture logic
-- Use-case scoring model
-- Governance checklist
-- Program board template
-- Mid-sized company and corporate case studies
+- Executive Summary und Management-Einordnung
+- Reifegradmodell für Digitalisierung und KI
+- Framework für die Ist-Analyse
+- Operating-Model- und Zielarchitektur-Logik
+- Use-Case-Scorecard
+- Governance-Checkliste
+- Programmboard-Template
+- Fallstudien für Mittelstand und Konzern
 
-## Suggested Resume Reference
+## Zusammenfassung
 
-AI Readiness Blueprint for German Enterprises - Developed a public strategy repository that outlines how to assess enterprise IT landscapes, prioritize AI use cases, define governance, redesign project management, and build KPI-driven transformation roadmaps for German mid-sized firms and corporations.
+Das Projekt bietet einen strukturierten Blueprint dafür, wie Unternehmen in Deutschland Digitalisierung und KI nicht als isolierte Pilotvorhaben, sondern als steuerbares Transformationsprogramm aufbauen können.

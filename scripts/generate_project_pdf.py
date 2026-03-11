@@ -5,20 +5,27 @@ from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "output" / "pdf" / "ai-readiness-blueprint-portfolio.pdf"
+OUTPUT = ROOT / "output" / "pdf" / "ki-implementierung-deutsche-unternehmen.pdf"
 
 
 def build_styles():
+    font_dir = Path("/System/Library/Fonts/Supplemental")
+    regular_font = font_dir / "Arial.ttf"
+    bold_font = font_dir / "Arial Bold.ttf"
+    pdfmetrics.registerFont(TTFont("DocSans", str(regular_font)))
+    pdfmetrics.registerFont(TTFont("DocSans-Bold", str(bold_font)))
     styles = getSampleStyleSheet()
     styles.add(
         ParagraphStyle(
             name="TitleBlock",
             parent=styles["Title"],
-            fontName="Helvetica-Bold",
+            fontName="DocSans-Bold",
             fontSize=22,
             leading=28,
             textColor=colors.HexColor("#12344d"),
@@ -30,7 +37,7 @@ def build_styles():
         ParagraphStyle(
             name="SectionHeading",
             parent=styles["Heading2"],
-            fontName="Helvetica-Bold",
+            fontName="DocSans-Bold",
             fontSize=13,
             leading=16,
             textColor=colors.HexColor("#12344d"),
@@ -42,7 +49,7 @@ def build_styles():
         ParagraphStyle(
             name="Body",
             parent=styles["BodyText"],
-            fontName="Helvetica",
+            fontName="DocSans",
             fontSize=10.5,
             leading=15,
             textColor=colors.HexColor("#1d2733"),
@@ -53,7 +60,7 @@ def build_styles():
         ParagraphStyle(
             name="Meta",
             parent=styles["BodyText"],
-            fontName="Helvetica",
+            fontName="DocSans",
             fontSize=9,
             leading=12,
             textColor=colors.HexColor("#5b6b79"),
@@ -76,25 +83,25 @@ def section(title, paragraphs, styles, story):
 
 def build_story(styles):
     story = []
-    story.append(Paragraph("AI Readiness Blueprint for German Enterprises", styles["TitleBlock"]))
+    story.append(Paragraph("Blueprint zur KI-Implementierung in deutschen Unternehmen", styles["TitleBlock"]))
     story.append(
         Paragraph(
-            "Portfolio dossier for applications, interviews, and GitHub presentation",
+            "Strategisches Projektdossier",
             styles["Meta"],
         )
     )
     story.append(
         Paragraph(
-            "This document describes a repository that shows how enterprise digitalization and AI enablement can be structured for German mid-sized firms and large corporations.",
+            "Dieses Dokument beschreibt ein Repository, das zeigt, wie Digitalisierung und KI-Einführung in deutschen Mittelständlern und Konzernen strukturiert aufgebaut werden können.",
             styles["Body"],
         )
     )
 
     section(
-        "Project Summary",
+        "Projektüberblick",
         [
             Paragraph(
-                "The project is a public blueprint for assessing enterprise readiness for digitalization and AI. It combines management framing with practical delivery artifacts such as maturity models, assessment templates, governance checklists, and transformation roadmaps.",
+                "Das Projekt ist ein Blueprint für die Analyse und den Aufbau von KI-Readiness in Unternehmen. Es verbindet Management-Perspektive mit konkreten Umsetzungsartefakten wie Reifegradmodellen, Assessment-Templates, Governance-Checklisten und Transformations-Roadmaps.",
                 styles["Body"],
             )
         ],
@@ -103,24 +110,24 @@ def build_story(styles):
     )
 
     section(
-        "What The Repository Covers",
+        "Inhalte des Repositorys",
         [
-            bullet("Current-state analysis of IT landscape, processes, delivery model, and data foundations", styles),
-            bullet("Digitalization and AI maturity model across strategy, operations, governance, and enablement", styles),
-            bullet("Target operating model for AI-ready organizations", styles),
-            bullet("Use-case portfolio and prioritization logic based on business value, feasibility, and risk", styles),
-            bullet("Governance framework for security, compliance, and responsible AI implementation", styles),
-            bullet("KPI-driven decision model and transformation roadmap for 12 to 24 months", styles),
+            bullet("Ist-Analyse von IT-Landschaft, Prozessen, Delivery-Modell und Datengrundlagen", styles),
+            bullet("Reifegradmodell für Digitalisierung und KI über Strategie, Operations, Governance und Enablement", styles),
+            bullet("Ziel-Operating-Model für KI-fähige Organisationen", styles),
+            bullet("Use-Case-Portfolio und Priorisierungslogik anhand von Business Value, Machbarkeit und Risiko", styles),
+            bullet("Governance-Framework für Security, Compliance und verantwortungsvolle KI-Implementierung", styles),
+            bullet("KPI-basiertes Entscheidungsmodell und Transformations-Roadmap für 12 bis 24 Monate", styles),
         ],
         styles,
         story,
     )
 
     section(
-        "Strategic Thesis",
+        "Strategische These",
         [
             Paragraph(
-                "AI readiness is not a standalone technology initiative. It is an enterprise capability program. Sustainable AI implementation requires process quality, data ownership, integration standards, operating governance, and measurable delivery outcomes.",
+                "KI-Readiness ist keine isolierte Technologieinitiative. Sie ist ein unternehmensweites Fähigkeitsprogramm. Nachhaltige KI-Implementierung braucht Prozessqualität, Datenverantwortung, Integrationsstandards, Betriebs-Governance und messbare Umsetzungsergebnisse.",
                 styles["Body"],
             )
         ],
@@ -129,12 +136,12 @@ def build_story(styles):
     )
 
     table_data = [
-        ["Capability", "What the project demonstrates"],
-        ["Strategy", "Translation of broad transformation goals into a coherent enterprise model"],
-        ["Architecture", "Assessment and target-state logic for systems, data, and integrations"],
-        ["Execution", "Roadmaps, scorecards, and program steering artifacts"],
-        ["Governance", "Responsible AI, security, compliance, and risk framing"],
-        ["Communication", "Public GitHub presentation suitable for portfolio use"],
+        ["Baustein", "Beitrag des Projekts"],
+        ["Strategie", "Übersetzung breiter Transformationsziele in ein konsistentes Unternehmensmodell"],
+        ["Architektur", "Logik für Ist-Analyse und Zielbild von Systemen, Daten und Integrationen"],
+        ["Umsetzung", "Roadmaps, Scorecards und Artefakte für die Programmsteuerung"],
+        ["Governance", "Einordnung von verantwortungsvoller KI, Security, Compliance und Risiko"],
+        ["Steuerung", "Verknüpfung von Management-Entscheidungen mit messbaren Ergebnissen"],
     ]
     table = Table(table_data, colWidths=[45 * mm, 120 * mm])
     table.setStyle(
@@ -142,7 +149,8 @@ def build_story(styles):
             [
                 ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#12344d")),
                 ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-                ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                ("FONTNAME", (0, 0), (-1, 0), "DocSans-Bold"),
+                ("FONTNAME", (0, 1), (-1, -1), "DocSans"),
                 ("FONTSIZE", (0, 0), (-1, -1), 9),
                 ("LEADING", (0, 0), (-1, -1), 12),
                 ("GRID", (0, 0), (-1, -1), 0.5, colors.HexColor("#c7d2db")),
@@ -155,36 +163,36 @@ def build_story(styles):
             ]
         )
     )
-    section("What This Shows About My Work", [table], styles, story)
+    section("Projektlogik im Überblick", [table], styles, story)
 
     section(
-        "Example Use Cases Covered By The Blueprint",
+        "Beispielhafte Handlungsfelder",
         [
-            bullet("AI readiness model for a German industrial mid-sized company", styles),
-            bullet("Governed AI scaling model for a corporate or group structure", styles),
-            bullet("Project and portfolio redesign toward measurable outcome steering", styles),
-            bullet("Tooling and operating choices tied to business capabilities and constraints", styles),
+            bullet("KI-Readiness-Modell für einen deutschen industriellen Mittelständler", styles),
+            bullet("Governed-AI-Skalierungsmodell fuer Konzern- oder Gruppenstrukturen", styles),
+            bullet("Neuausrichtung von Projekt- und Portfoliosteuerung in Richtung messbarer Ergebnisse", styles),
+            bullet("Tool- und Betriebsentscheidungen entlang von Geschäftsfähigkeiten und Restriktionen", styles),
         ],
         styles,
         story,
     )
 
     section(
-        "Case Study Snapshot",
+        "Fallstudien-Snapshot",
         [
-            bullet("Mid-sized company scenario: ERP-centered environment with Excel-heavy coordination, fragmented knowledge, and the need for fast value realization", styles),
-            bullet("Corporate scenario: multi-business-unit environment with heterogeneous systems, stronger governance constraints, and the need for scalable standards", styles),
-            bullet("Both variants are translated into concrete assessment, governance, and rollout logic inside the repository", styles),
+            bullet("Mittelstands-Szenario: ERP-zentrierte Umgebung mit Excel-lastiger Koordination, fragmentiertem Wissen und Bedarf an schneller Wertrealisierung", styles),
+            bullet("Konzern-Szenario: Multi-Business-Unit-Umfeld mit heterogenen Systemen, höheren Governance-Anforderungen und Bedarf an skalierbaren Standards", styles),
+            bullet("Beide Varianten werden im Repository in konkrete Assessment-, Governance- und Rollout-Logik übersetzt", styles),
         ],
         styles,
         story,
     )
 
     section(
-        "Why The Project Is Relevant",
+        "Warum das Projekt relevant ist",
         [
             Paragraph(
-                "The repository is built around a practical market reality: many companies want to use AI, but lack the operational foundation to do so responsibly. The project addresses this gap by linking digitalization, architecture, governance, and management decisions in one system.",
+                "Das Repository adressiert eine konkrete Marktrealität: Viele Unternehmen wollen KI nutzen, haben aber noch nicht die operative Grundlage für verantwortungsvolle Skalierung. Das Projekt verbindet deshalb Digitalisierung, Architektur, Governance und Management-Entscheidungen in einem gemeinsamen Modell.",
                 styles["Body"],
             )
         ],
@@ -193,10 +201,10 @@ def build_story(styles):
     )
 
     section(
-        "Resume Summary",
+        "Kernaussage",
         [
             Paragraph(
-                "Developed a public strategy repository that explains how to assess enterprise IT landscapes, define AI-ready operating models, prioritize use cases, establish governance, redesign project management, and steer transformation through KPI-based decisions.",
+                "Der Blueprint beschreibt, wie Unternehmenslandschaften analysiert, KI-fähige Operating Models definiert, Use Cases priorisiert, Governance etabliert und Transformationen über KPI-basierte Entscheidungen gesteuert werden können.",
                 styles["Body"],
             )
         ],
@@ -205,10 +213,10 @@ def build_story(styles):
     )
 
     section(
-        "Repository Reference",
+        "Repository-Referenz",
         [
             Paragraph(
-                "Main repository files include README, executive summary, maturity model, assessment framework, operating model, use-case portfolio, governance guidance, KPI model, roadmap, templates, and case studies.",
+                "Zu den zentralen Inhalten gehören README, Executive Summary, Reifegradmodell, Assessment-Framework, Operating Model, Use-Case-Portfolio, Governance-Leitfaden, KPI-Modell, Roadmap, Templates und Fallstudien.",
                 styles["Body"],
             )
         ],
@@ -217,11 +225,11 @@ def build_story(styles):
     )
 
     section(
-        "Suggested Interview Framing",
+        "Leitfragen für die Anwendung",
         [
-            bullet("How would I assess an enterprise before suggesting AI initiatives?", styles),
-            bullet("How do I connect management priorities with implementation decisions?", styles),
-            bullet("What governance and KPI logic is needed before scaling AI?", styles),
+            bullet("Wie sollte ein Unternehmen bewertet werden, bevor KI-Initiativen gestartet werden?", styles),
+            bullet("Wie lassen sich Management-Prioritäten mit Umsetzungsentscheidungen verbinden?", styles),
+            bullet("Welche Governance- und KPI-Logik ist vor der Skalierung von KI notwendig?", styles),
         ],
         styles,
         story,
@@ -232,9 +240,9 @@ def build_story(styles):
 
 def add_page_number(canvas, doc):
     canvas.saveState()
-    canvas.setFont("Helvetica", 9)
+    canvas.setFont("DocSans", 9)
     canvas.setFillColor(colors.HexColor("#5b6b79"))
-    canvas.drawRightString(195 * mm, 12 * mm, f"Page {doc.page}")
+    canvas.drawRightString(195 * mm, 12 * mm, f"Seite {doc.page}")
     canvas.restoreState()
 
 

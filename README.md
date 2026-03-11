@@ -99,7 +99,7 @@ Fuer eine oeffentliche Veroeffentlichung sind jetzt vorhanden:
 - klare Dokumentstruktur
 - anwendbare Templates
 - Fallstudien fuer unterschiedliche Unternehmensrealitaeten
-- ein PDF-Dossier fuer Bewerbungen und Portfolio-Einsatz
+- ein eigenstaendiges PDF-Dossier zur Projektbeschreibung
 
 ## Naechste sinnvolle Ausbaustufen
 
