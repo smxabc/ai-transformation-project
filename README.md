@@ -38,23 +38,23 @@ transformiert werden kann.
 
 ## Repository-Struktur
 
-- [docs/01-executive-summary.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/01-executive-summary.md) - Management-Zusammenfassung des Zielbilds
-- [docs/02-maturity-model.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/02-maturity-model.md) - Reifegradmodell fuer Digitalisierung und KI
-- [docs/03-assessment-framework.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/03-assessment-framework.md) - Vorgehen zur Analyse der Ist-Landschaft
-- [docs/04-target-operating-model.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/04-target-operating-model.md) - Ziel-Operating-Model fuer KI-faehige Unternehmen
-- [docs/05-ai-use-case-portfolio.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/05-ai-use-case-portfolio.md) - Use-Case-Portfolio und Priorisierung
-- [docs/06-tooling-blueprint.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/06-tooling-blueprint.md) - Tooling-Empfehlungen nach Domainen
-- [docs/07-governance-risk-security.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/07-governance-risk-security.md) - Governance, Risiko, Compliance, Sicherheit
-- [docs/08-kpi-decision-model.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/08-kpi-decision-model.md) - Metriken und Entscheidungsmodell
-- [docs/09-transformation-roadmap.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/09-transformation-roadmap.md) - Roadmap fuer 12 bis 24 Monate
-- [docs/10-example-scenarios.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/10-example-scenarios.md) - Beispielhafte Anwendung fuer Mittelstand und Konzern
-- [docs/11-case-study-mittelstand.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/11-case-study-mittelstand.md) - konkrete Mittelstands-Fallstudie
-- [docs/12-case-study-konzern.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/12-case-study-konzern.md) - konkrete Konzern-Fallstudie
-- [templates/current-state-assessment.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/templates/current-state-assessment.md) - Vorlage fuer die Ist-Analyse
-- [templates/use-case-scorecard.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/templates/use-case-scorecard.md) - Bewertungslogik fuer KI-Use-Cases
-- [templates/ai-governance-checklist.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/templates/ai-governance-checklist.md) - Governance-Checkliste
-- [templates/program-board.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/templates/program-board.md) - Steuerung eines Transformationsprogramms
-- [assets/maturity-model.csv](/Users/schamilamarkhel/Desktop/ML:AI-Project01/assets/maturity-model.csv) - tabellarische Reifegrad-Matrix
+- [docs/01-executive-summary.md](docs/01-executive-summary.md) - Management-Zusammenfassung des Zielbilds
+- [docs/02-maturity-model.md](docs/02-maturity-model.md) - Reifegradmodell fuer Digitalisierung und KI
+- [docs/03-assessment-framework.md](docs/03-assessment-framework.md) - Vorgehen zur Analyse der Ist-Landschaft
+- [docs/04-target-operating-model.md](docs/04-target-operating-model.md) - Ziel-Operating-Model fuer KI-faehige Unternehmen
+- [docs/05-ai-use-case-portfolio.md](docs/05-ai-use-case-portfolio.md) - Use-Case-Portfolio und Priorisierung
+- [docs/06-tooling-blueprint.md](docs/06-tooling-blueprint.md) - Tooling-Empfehlungen nach Domainen
+- [docs/07-governance-risk-security.md](docs/07-governance-risk-security.md) - Governance, Risiko, Compliance, Sicherheit
+- [docs/08-kpi-decision-model.md](docs/08-kpi-decision-model.md) - Metriken und Entscheidungsmodell
+- [docs/09-transformation-roadmap.md](docs/09-transformation-roadmap.md) - Roadmap fuer 12 bis 24 Monate
+- [docs/10-example-scenarios.md](docs/10-example-scenarios.md) - Beispielhafte Anwendung fuer Mittelstand und Konzern
+- [docs/11-case-study-mittelstand.md](docs/11-case-study-mittelstand.md) - konkrete Mittelstands-Fallstudie
+- [docs/12-case-study-konzern.md](docs/12-case-study-konzern.md) - konkrete Konzern-Fallstudie
+- [templates/current-state-assessment.md](templates/current-state-assessment.md) - Vorlage fuer die Ist-Analyse
+- [templates/use-case-scorecard.md](templates/use-case-scorecard.md) - Bewertungslogik fuer KI-Use-Cases
+- [templates/ai-governance-checklist.md](templates/ai-governance-checklist.md) - Governance-Checkliste
+- [templates/program-board.md](templates/program-board.md) - Steuerung eines Transformationsprogramms
+- [assets/maturity-model.csv](assets/maturity-model.csv) - tabellarische Reifegrad-Matrix
 
 ## Leitprinzipien
 
@@ -85,8 +85,8 @@ Dieses Repository kann als Diskussionsgrundlage fuer Management, IT und Fachbere
 
 Fuer eine oeffentliche Veroeffentlichung sind jetzt vorhanden:
 
-- [LICENSE](/Users/schamilamarkhel/Desktop/ML:AI-Project01/LICENSE)
-- [CONTRIBUTING.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/CONTRIBUTING.md)
+- [LICENSE](LICENSE)
+- [CONTRIBUTING.md](CONTRIBUTING.md)
 - klare Dokumentstruktur
 - anwendbare Templates
 - Fallstudien fuer unterschiedliche Unternehmensrealitaeten
@@ -102,4 +102,4 @@ Fuer eine oeffentliche Veroeffentlichung sind jetzt vorhanden:
 
 ## Lizenz
 
-Die Lizenzbedingungen sind in [LICENSE](/Users/schamilamarkhel/Desktop/ML:AI-Project01/LICENSE) hinterlegt.
+Die Lizenzbedingungen sind in [LICENSE](LICENSE) hinterlegt.
