@@ -12,6 +12,7 @@ from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, Tabl
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "output" / "pdf" / "ki-implementierung-deutsche-unternehmen.pdf"
+GITHUB_URL = "https://github.com/smxabc/ai-transformation-project"
 
 
 def build_styles():
@@ -242,7 +243,9 @@ def add_page_number(canvas, doc):
     canvas.saveState()
     canvas.setFont("DocSans", 9)
     canvas.setFillColor(colors.HexColor("#5b6b79"))
+    canvas.drawString(18 * mm, 16 * mm, GITHUB_URL)
     canvas.drawRightString(195 * mm, 12 * mm, f"Seite {doc.page}")
+    canvas.linkURL(GITHUB_URL, (18 * mm, 14.5 * mm, 120 * mm, 18.5 * mm), relative=0)
     canvas.restoreState()
 
 

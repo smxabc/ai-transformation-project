@@ -2,13 +2,9 @@
 
 Dieses Repository ist ein praxisnahes Blueprint-Projekt dafuer, wie Unternehmen in Deutschland systematisch digitalisierungs- und KI-faehig gemacht werden koennen. Der Fokus liegt auf Konzernen und Mittelstand: von der Analyse der aktuellen IT-Landschaft ueber Priorisierung und Governance bis zur messbaren Umsetzung.
 
-## Why This Repository Exists
+## Projektkontext
 
-Dieses Projekt ist bewusst so aufgebaut, dass es gleichzeitig drei Rollen erfuellt:
-
-- strategisches Showcase fuer GitHub und Bewerbungen
-- belastbares Denkmodell fuer digitale Transformation und KI-Einfuehrung
-- wiederverwendbares Arbeitsmaterial fuer Assessments, Workshops und Programme
+Dieses Projekt ist als strukturierter Blueprint fuer digitale Transformation und KI-Einfuehrung aufgebaut. Es verbindet strategische Leitlinien mit konkreten Arbeitsmaterialien fuer Assessments, Workshops und Transformationsprogramme.
 
 ## Ziel
 
@@ -54,7 +50,6 @@ transformiert werden kann.
 - [docs/10-example-scenarios.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/10-example-scenarios.md) - Beispielhafte Anwendung fuer Mittelstand und Konzern
 - [docs/11-case-study-mittelstand.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/11-case-study-mittelstand.md) - konkrete Mittelstands-Fallstudie
 - [docs/12-case-study-konzern.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/12-case-study-konzern.md) - konkrete Konzern-Fallstudie
-- [docs/13-github-positioning.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/docs/13-github-positioning.md) - Positionierung des Repos als Portfolio-Projekt
 - [templates/current-state-assessment.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/templates/current-state-assessment.md) - Vorlage fuer die Ist-Analyse
 - [templates/use-case-scorecard.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/templates/use-case-scorecard.md) - Bewertungslogik fuer KI-Use-Cases
 - [templates/ai-governance-checklist.md](/Users/schamilamarkhel/Desktop/ML:AI-Project01/templates/ai-governance-checklist.md) - Governance-Checkliste
@@ -84,13 +79,9 @@ flowchart LR
 
 ## Einsatz dieses Repositories
 
-Dieses Repository kann auf drei Arten genutzt werden:
+Dieses Repository kann als Diskussionsgrundlage fuer Management, IT und Fachbereiche, als Grundlage fuer Assessments und Workshops sowie als Ausgangspunkt fuer weiterfuehrende Transformationsinitiativen genutzt werden.
 
-1. Als oeffentliches Showcase-Projekt auf GitHub.
-2. Als Diskussionsgrundlage fuer Kunden, Management oder interne Stakeholder.
-3. Als Startpunkt fuer ein spaeteres Beratungsprodukt, eine Workshop-Serie oder eine digitale Assessment-Plattform.
-
-## GitHub Readiness
+## Projektumfang
 
 Fuer eine oeffentliche Veroeffentlichung sind jetzt vorhanden:
 
@@ -111,4 +102,4 @@ Fuer eine oeffentliche Veroeffentlichung sind jetzt vorhanden:
 
 ## Lizenz
 
-Zur Zeit ist keine separate Lizenzdatei hinterlegt. Vor der Veroeffentlichung auf GitHub sollte eine passende Open-Source- oder proprietaere Lizenz ergaenzt werden.
+Die Lizenzbedingungen sind in [LICENSE](/Users/schamilamarkhel/Desktop/ML:AI-Project01/LICENSE) hinterlegt.

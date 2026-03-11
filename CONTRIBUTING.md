@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository is maintained as a strategic portfolio project and practical blueprint for enterprise digitalization and AI readiness.
+This repository is maintained as a practical blueprint for enterprise digitalization and AI readiness.
 
 Contributions should improve one of these outcomes:
 
